@@ -249,7 +249,7 @@ int fileget(char *buf, int Fclientfd)
 
 
 		if(write(Fclientfd, &fstat, sizeof(fstat)) == -1)
-			printf("Failed to send        vstat\n");
+			printf("Failed to send vstat\n");
 		else
 			printf("Sent vstat\n");
 	//sprintf(buf+strlen(buf),"%s    ",files[i-1]->d_name);
@@ -961,6 +961,10 @@ int main(int argc, char *argv[])
 		printf("Usage ./peer <IP> <Port of Remote Machine> <Port of Your Machine>\n");
 		return -1;
 	}
+	struct stat st = {0};
+	if (stat("./shared", &st) == -1) 
+	    mkdir("./shared", 0700);
+	
 	int peer1 = atoi(argv[2]);
 	int peer2 = atoi(argv[3]);
 	int fd[2];
