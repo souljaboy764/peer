@@ -5,12 +5,12 @@ peer
 Usage ./peer \<IP\> \<Port of Remote Machine\> \<Port of Your Machine\>
 
 Basic filesharing application
- To enable two clients to:\n
--Know list of files on each other's machines in designate shared folders \n
--Upload a file to each other\n
--Download a file to each other\n
--Periodically check for changes in the shared folder\n
--Application level error checking using MD5 checksum\n
+ To enable two clients to:
+-Know list of files on each other's machines in designate shared folders 
+-Upload a file to each other
+-Download a file to each other
+-Periodically check for changes in the shared folder
+-Application level error checking using MD5 checksum
 
 1. An "IndexGet" request which can request different styles of the same index of the shared folder on the other client as listed below.	
 
