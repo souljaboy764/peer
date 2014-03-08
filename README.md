@@ -2,7 +2,7 @@ peer
 
 ====
 
-Usage ./peer <IP> <Port of Remote Machine> <Port of Your Machine>
+Usage ./peer \<IP\> \<Port of Remote Machine\> \<Port of Your Machine\>
 
 Basic filesharing application
  To enable two clients to:
